@@ -465,3 +465,128 @@
 .pricing__column:nth-of-type(3) .pricing__button {
   background-color: var(--color-green);
 }
+
+.contact {
+  margin-top: 55px;
+  background-color: var(--color-white);
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+  width: 896px;
+}
+
+.contact__header {
+  color: var(--color-black);
+  font-size: 49px;
+  font-family: var(--font-raleway);
+  font-weight: 400;
+  line-height: 57px;
+}
+
+.contact__description {
+  color: var(--color-black);
+  font-size: 16px;
+  font-family: var(--font-open-sans);
+  font-weight: 400;
+  margin-top: 22px;
+}
+
+.contact__icons {
+  padding-top: 40px;
+  display: flex;
+  gap: 20px;
+  color: var(--color-grey);
+  font-size: 16px;
+  font-family: var(--font-open-sans);
+  font-weight: 600;
+}
+
+.contact__icon-mail::before {
+  content: url("../assets/Mail Icon.svg");
+  margin-right: 10px;
+}
+
+.contact__icon-phone::before {
+  content: url("../assets/Phone Icon.svg");
+  margin-right: 10px;
+}
+
+.contact__column-two {
+  width: 440px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact-form__title {
+  color: var(--color-primary);
+  font-size: 11px;
+  font-family: var(--font-open-sans);
+  font-weight: 700;
+  letter-spacing: 3.28px;
+}
+
+.contact-form input{
+  height: 41px;
+  border: 0;
+  border-bottom: 1px solid #95989A;
+  font-size: 16px;
+  margin-bottom: 42px;
+}
+
+.agreement {
+  display: flex;
+  justify-content: space-between;
+  gap: 34px;
+}
+
+.agreement > input[type="checkbox"], .checkbox::after  {
+  display: none;
+}
+
+.checkbox::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+}
+
+input:checked ~ .checkbox::before {
+  content: url("../assets/Checkmark.svg");
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+
+.agreement-description {
+  font-size: 12px;
+  color: #707070;
+  font-family: var(--font-open-sans);
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.form-send {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-send input{
+  width: 226px;
+  height: 57px;
+  color: var(--color-white);
+  font-size: 13px;
+  font-weight: 700;
+  background-color: var(--color-primary);
+  border-radius: var(--button-radius);
+  box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  margin-top: 20px;
+}
