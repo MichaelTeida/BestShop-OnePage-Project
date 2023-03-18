@@ -19,7 +19,7 @@
 }
 
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
   width: 1352px;
 }
 
@@ -64,10 +64,10 @@
 }
 
 .opening {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .opening__container {
@@ -75,7 +75,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-    padding-top: 130px;
+  padding-top: 130px;
 }
 
 .opening__header {
@@ -83,7 +83,7 @@
   font-size: 49px;
   font-family: var(--font-raleway);
   font-weight: 400;
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .opening__description {
@@ -91,7 +91,7 @@
   font-size: 16px;
   font-family: var(--font-open-sans);
   font-weight: 400;
-    padding-bottom: 38px;
+  padding-bottom: 38px;
 }
 
 .opening__button {
@@ -99,90 +99,238 @@
   font-size: 16px;
   font-family: var(--font-open-sans);
   font-weight: 700;
-    text-decoration: none;
+  text-decoration: none;
   background-color: var(--color-primary);
-    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+  box-shadow: 5px 10px 14px var(--color-primary-shadow);
   width: 440px;
   padding: 22px 0 23px 0;
   border-radius: 40px;
 }
 
 .opening__background {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .statistics {
-    background-color: var(--color-white);
-    padding-top: 100px;
-    padding-bottom: 122px;
+  background-color: var(--color-white);
+  padding-top: 100px;
+  padding-bottom: 122px;
 }
 
 .statistics__container {
-    text-align: center;
+  text-align: center;
 }
 
 .statistics__header {
-    color: var(--color-black);
-    font-size: 36px;
-    font-family: var(--font-raleway);
-    font-weight: 400;
-    margin-bottom: 101px;
+  color: var(--color-black);
+  font-size: 36px;
+  font-family: var(--font-raleway);
+  font-weight: 400;
+  margin-bottom: 101px;
 }
 
 .statistics__columns {
-    display: flex;
-    justify-content: center;
-    gap: 210px;
+  display: flex;
+  justify-content: center;
+  gap: 210px;
 }
 
 .statistics__column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 139px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 139px;
 }
 
 .statistics__circle {
-    display: flex;
-    justify-content: center;
-    width: 63px;
-    height: 63px;
-    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
 }
 
 .circle__one {
-    background-color: var(--color-redish);
-    padding-bottom: 5px;
+  background-color: var(--color-redish);
+  padding-bottom: 5px;
 }
 
 .circle__two {
-    background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .circle__three {
-    background-color: var(--color-green);
-    padding-bottom: 5px;
+  background-color: var(--color-green);
+  padding-bottom: 5px;
 }
 
 .statistics__icon {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 .statistics__column-header {
-    color: var(--color-black);
-    font-family: var(--font-raleway);
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: 5.96px;
-    padding-top: 13px;
-    padding-bottom: 19px;
+  color: var(--color-black);
+  font-family: var(--font-raleway);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 5.96px;
+  padding-top: 13px;
+  padding-bottom: 19px;
 }
 
 .statistics__column-description {
-    color: var(--color-grey);
-    font-family: var(--font-raleway);
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 20px;
+  color: var(--color-grey);
+  font-family: var(--font-raleway);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.benefits {
+    background-color: var(--color-light-grey);
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.benefits__container {
+    width: 1124px;
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+}
+
+.benefits__row {
+    background-color: var(--color-white);
+    border-radius: 5px;
+    padding: 0 35px; /*tu width ustawione roboczo*/
+  height: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits__column {
+  width: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.benefits__header {
+  color: var(--color-black);
+  font-family: var(--font-raleway);
+  font-size: 36px;
+  font-weight: 400;
+  padding-bottom: 30px;
+  width: 60%;
+  line-height: 42px;
+}
+
+.benefits__desc {
+  color: var(--color-black);
+  font-family: var(--font-open-sans);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.line {
+  content: "";
+  display: block;
+  position: relative;
+  height: 4px;
+  width: 328px;
+  margin-top: 50px;
+}
+
+.line__one {
+  background-color: var(--color-redish);
+}
+
+.line__two {
+  background-color: var(--color-primary);
+}
+
+.line__three {
+  background-color: var(--color-green);
+}
+
+.macbook {
+  width: 386px;
+  height: 219px;
+  z-index: 1;
+  position: relative;
+}
+
+.benefits__column-image-one {
+  position: relative;
+  top: 38px;
+  right: 60px;
+}
+
+.benefits__column-image-one::before {
+  content: "";
+  background-color: var(--color-redish);
+  width: 181px;
+  height: 181px;
+  border-radius: 40px;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 20px;
+  bottom: 77px;
+}
+
+.iphone {
+  width: 426px;
+  height: 328px;
+  z-index: 1;
+  position: relative;
+}
+
+.benefits__column-image-two {
+  position: relative;
+  top: 5px;
+  left: 35px;
+}
+
+.benefits__column-image-two::before {
+  content: "";
+  background-color: var(--color-primary);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  position: absolute;
+  right: 100px;
+  bottom: 24px;
+}
+
+.benefits-sec__row {
+  display: flex;
+  justify-content: space-between;
+  height: 370px;
+}
+
+.benefits-sec__column-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 623px;
+  background-color: var(--color-white);
+  padding: 0 35px;
+}
+
+.benefits-sec__column-one .benefits__header {
+  width: 70%;
+}
+
+.benefits-sec__column-two {
+  width: 440px;
+  background-color: var(--color-green);
+  padding-top: 98px;
+  padding-left: 62px;
+}
+
+.Trumpet {
+  width: 296px;
+  height: 208px;
 }
