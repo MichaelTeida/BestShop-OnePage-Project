@@ -188,22 +188,22 @@
 }
 
 .benefits {
-    background-color: var(--color-light-grey);
-    padding-top: 105px;
-    padding-bottom: 105px;
+  background-color: var(--color-light-grey);
+  padding-top: 105px;
+  padding-bottom: 105px;
 }
 
 .benefits__container {
-    width: 1124px;
-    display: flex;
-    flex-direction: column;
-    gap: 37px;
+  width: 1124px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
 }
 
 .benefits__row {
-    background-color: var(--color-white);
-    border-radius: 5px;
-    padding: 0 35px; /*tu width ustawione roboczo*/
+  background-color: var(--color-white);
+  border-radius: 5px;
+  padding: 0 35px; /*tu width ustawione roboczo*/
   height: 370px;
   display: flex;
   justify-content: space-between;
@@ -330,7 +330,138 @@
   padding-left: 62px;
 }
 
-.Trumpet {
+.trumpet {
   width: 296px;
   height: 208px;
+}
+
+.pricing {
+  background-color: var(--color-white);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pricing__header {
+  font-family: var(--font-raleway);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
+  text-align: center;
+}
+
+.pricing__columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 59px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.pricing__column {
+  width: 372px;
+  height: 461px;
+  padding-top: 32px;
+  border-width: 1px;
+  border-color: var(--color-redish); /*robocze*/
+  border-style: solid;
+  border-radius: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__column:nth-of-type(2) {
+  height: 500px;
+  border-color: var(--color-primary);
+  box-shadow: 5px 10px 27px var(--color-primary-shadow);
+}
+
+.pricing__column:nth-of-type(2) .pricing__box .pricing__price{
+  color: var(--color-primary);
+}
+
+.pricing__column:nth-of-type(3) {
+  border-color: var(--color-green);
+}
+
+.pricing__column:nth-of-type(3) .pricing__box .pricing__price{
+  color: var(--color-green);
+}
+
+.pricing__model {
+  font-size: 20px;
+  font-family: var(--font-raleway);
+  font-weight: 700;
+  color: #13253B;
+}
+
+.pricing__price {
+  font-size: 46px;
+  font-family: var(--font-open-sans);
+  font-weight: 300;
+  color: red; /*robocze*/
+  margin-top: 14px;
+}
+
+.pricing__limited-offer {
+  font-size: 12px;
+  font-family: var(--font-raleway);
+  font-weight: 700;
+  color: #13253B;
+  margin-top: 25px;
+}
+
+.pricing__list {
+  margin-top: 36px;
+}
+
+.basic {
+  margin-top: 73px;
+}
+
+.pricing__feature {
+  font-size: 14px;
+  font-family: var(--font-open-sans);
+  font-weight: 400;
+  padding-top: 25px;
+}
+
+.pricing__feature::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background-image: url(../assets/Checkmark-1.svg);
+  margin-right: 10px;
+}
+
+.close::before {
+  background-image: url(../assets/Close.svg);
+}
+
+.pricing__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-redish);
+  color: var(--color-white);
+  width: 150px;
+  height: 50px;
+  border-radius: 23px;
+  font-family: var(--font-open-sans);
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  position: absolute;
+  bottom: -25px;
+}
+
+.pricing__column:nth-of-type(2) .pricing__button {
+  background-color: var(--color-primary);
+}
+
+.pricing__column:nth-of-type(3) .pricing__button {
+  background-color: var(--color-green);
 }
